@@ -1,0 +1,38 @@
+{
+    "ciudades": [
+      "Medellin",
+      "Guatape",
+      "Marinilla",
+      "El retiro",
+      "Rionegro",
+      "Jardin",
+      "San Pedro",
+      "San felix"
+    ],
+
+
+    "viajes": [
+        {
+            "origen" : "Medellin",
+            "destino" : "Guatape",
+            "precio" : 25000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Marinilla",
+            "precio" : 19000
+
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "El retiro",
+            "precio" : 20000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Rionegro",
+            "precio" : 12000
+        }
+    ]
+}
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChivApp - Viaja por Antioquia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body class="home">
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1><a href="index.html">ChivApp</a></h1>
+            <nav class="navegacion-principal">
+                <a href="index.html">Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bienvenida">
+        <h3>Bienvenido, nombre :)</h3>
+    </div>
+
+    <section class="sobre-home">
+
+        <div class="contenido-home">
+            <h2>Busca un viaje</h2>
+            <form action="" class="formulario-viaje">
+
+                <!-- Las opciones múltiples de origen y destino se cargan desde viajes.json en src/app.js -->
+                <div class="campo">
+                <label class="campo__label" for="origen">Origen</label>
+                <select class="formulario__campo" id="origen" name="origen">
+                    <option value="">Selecciona origen</option>
+                </select>
+                </div>
+
+                <div class="campo">
+                <label class="campo__label" for="destino">Destino</label>
+                <select class="formulario__campo" id="destino" name="destino">
+                    <option value="">Selecciona destino</option>
+                </select>              
+                </div>
+
+                <div class="campofecha">
+                <label class="campo__label" for="fecha">Fecha</label>
+                <input class="formulario__campo" type="date" name = "n_pasajeros" id="n_pasajeros" placeholder="" min="0">
+                </div>
+
+                <div class="campo">
+                <label class="campo__label" for="n_pasajeros">Número pasajeros</label>
+                <input class="formulario__campo" type="number" name = "n_pasajeros" id="n_pasajeros" placeholder="" min="0" max="10">
+                </div>
+
+
+                <input class="formulario__submit" type="submit" value="Buscar viaje" class="">
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="contenedor-footer">
+        <p>Todos los derechos reservados ChivApp 2024 &copy;</p>
+    </footer>
+
+    <script src=""></script>
+
+</body>
+</html>

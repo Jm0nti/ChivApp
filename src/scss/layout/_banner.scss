@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.banner{
+    max-height: 60rem;
+    position: relative; //Se asigna una posicion relativa al padre para que los elementos hijos puedan tener una posicion absoluta con respecto a este y puedan ser posicionados encima de el.
+    overflow: hidden; // Se oculta el contenido que se desborde del contenedor.
+    .overlay{
+        position: absolute;   // Con ayuda de las posiciones relativas y absolutas podremos ubicar un elemento exactamente donde deseamos.
+        inset: 0;
+        text-align: center;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+
+    img {
+        min-height: 50rem;
+        display: block;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        object-position: center center;
+        @include m.desktop {
+            width: 100%;
+        }
+    }
+}
+
+.contenido-banner{
+
+    h2{
+        color: v.$blanco;
+        margin: 0;
+    }
+
+    p{
+        display: inline-block; // Se asigna un display inline-block para que el elemento se comporte como un bloque pero se pueda alinear como un elemento inline.
+        // background-color: v.$blanco;
+        color: v.$blanco;
+        padding:1rem 2rem;
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+}

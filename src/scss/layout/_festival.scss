@@ -1,0 +1,75 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-festival{
+    @include m.contenedor;
+
+    @include m.tablet{
+        @include m.grid(2, 5rem);
+        img {
+            object-position: center center;
+        }
+    }
+    img{
+        border-radius: 1rem;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen{
+        max-height: 55rem;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+}
+
+
+.contenido-festival{
+    margin-top: 5rem;
+    h2{
+        margin-bottom: 2rem;
+    }
+    .ubicacion{
+        color: v.$vino;
+        font-weight: 700;
+    }
+
+    .boton{
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: v.$vino;
+        color: white;
+        border-radius: 1rem;
+        font-weight: 700;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+.sobre-chivas{
+    padding-top: 0;
+    @include m.contenedor;
+
+    @include m.tablet{
+        @include m.grid(2, 5rem);
+        img {
+            object-position: center center;
+        }
+    }
+}
+
+
+.contenido-chivas{
+    margin-top:5rem;
+    h2{
+        margin-bottom: 2rem;
+    }
+    .ubicacion{
+        color: v.$vino;
+        font-weight: 700;
+    }
+}

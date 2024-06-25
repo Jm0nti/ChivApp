@@ -1,0 +1,92 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.sobre-festival--login{
+    margin-top: -5rem;
+    
+}
+
+
+.contenido-festival--login{
+    margin-top: 3rem;
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    .boton{
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: v.$vino;
+        color: white;
+        border-radius: 1rem;
+        font-weight: 700;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    .formulario__campo{
+        border: none;
+        background-color: #e1e1e1;
+        border-radius: 1rem;
+        padding: 1rem;
+        appearance: none;  
+    }
+
+    .formulario__submit{
+        margin-top: 1rem;
+        background-color: v.$negro;
+        border: none;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 2rem;
+        color: v.$blanco;
+        border-radius: 1rem;
+        transition: background-color 0.3s ease;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: v.$vino;
+        }
+
+        @include m.tablet{
+                display: inline-block;
+                width: 50%;
+        }
+    }
+}
+
+.nocuenta{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    &:hover{
+        color: black;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.error, .correcto{
+    font-size: 1.4rem;
+}
+
+.correcto{
+    font-weight: 600;
+    color: green;
+}
+
+.error{
+    font-weight: 600;
+    color: red;
+}

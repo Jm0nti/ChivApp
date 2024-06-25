@@ -1,0 +1,53 @@
+{
+  "usuarios": [
+    {
+      "id": 100000,
+      "pass": "1234",
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "admin": true
+    },
+    {
+      "id": 200000,
+      "pass": "1234",
+      "nombre": "Pedro",
+      "apellido": "Porro",
+      "admin": false
+    },
+    {
+      "id": 300000,
+      "pass": "1234",
+      "nombre": "Andrea",
+      "apellido": "Jimenez",
+      "admin": false
+    },
+    {
+      "id": 400000,
+      "pass": "1234",
+      "nombre": "Karen",
+      "apellido": "Saavedra",
+      "admin": false
+    },
+    {
+      "id": 999999999,
+      "pass": "GonorreaPassword",
+      "nombre": "Ahora sifunciona",
+      "apellido": "Perro hijueputa",
+      "admin": false
+    },
+    {
+      "id": 5543,
+      "pass": "1234",
+      "nombre": "Testing",
+      "apellido": "Lasss",
+      "admin": false
+    },
+    {
+      "id": 987654321,
+      "pass": "passtest",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "admin": false
+    }
+  ]
+}
