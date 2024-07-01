@@ -2,7 +2,7 @@
 1. Instalar Node.js (https://nodejs.org/en)
 2. Abrir la carpeta del proyecto en VScode.
 3. En Terminal, crear una nueva terminal.
-4. En la terminal, ejecutar los siguientes comandos uno por uno para instalar las dependencias de package.json:
+4. En la terminal, ejecutar los siguientes comandos uno por uno para iniciar npm e instalar las dependencias de package.json:
    - ```npm init```
    - ```npm install```
 
