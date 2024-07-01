@@ -31,7 +31,7 @@
     {
       "id": 999999999,
       "pass": "GonorreaPassword",
-      "nombre": "Ahora sifunciona",
+      "nombre": "Ahora si",
       "apellido": "Perro hijueputa",
       "admin": false
     },
@@ -43,10 +43,17 @@
       "admin": false
     },
     {
-      "id": 987654321,
-      "pass": "passtest",
-      "nombre": "Nombre",
-      "apellido": "Apellido",
+      "id": 20202023012,
+      "pass": "123123",
+      "nombre": "Lupe",
+      "apellido": "Garcia",
+      "admin": false
+    },
+    {
+      "id": 12329,
+      "pass": "123123",
+      "nombre": "Testing",
+      "apellido": "Reset",
       "admin": false
     }
   ]

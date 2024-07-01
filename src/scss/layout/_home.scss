@@ -5,6 +5,7 @@
 .bienvenida{
     @include m.contenedor;
     h3{
+        margin:0;
         margin-top: 3rem;
         display: inline-block;
         font-size: 2.5rem;
@@ -32,25 +33,6 @@
 }
 
 
-.sobre-chivas{
-    padding-top: 0;
-    @include m.contenedor;
-
-    @include m.tablet{
-        @include m.grid(2, 5rem);
-        img {
-            object-position: center center;
-        }
-    }
-}
-
-
-.contenido-chivas{
-    margin-top:5rem;
-    h2{
-        margin-bottom: 2rem;
-    }
-}
 
 .formulario-viaje{
     display: flex;
@@ -77,13 +59,12 @@
         width: 100%;
     }
 
-    .formulario__submit{
-        margin-top: 6rem;
+    .formulario__submitViaje{
         background-color: v.$negro;
         border: none;
         font-size: 2rem;
         font-weight: 600;
-        padding: 2rem;
+        padding: 1rem;
         color: v.$blanco;
         border-radius: 1rem;
         transition: background-color 0.3s ease;
@@ -92,10 +73,24 @@
             cursor: pointer;
             background-color: v.$vino;
         }
+        
 
         @include m.tablet{
-                display: inline-block;
-                width: 100%;
+            display: inline-block;
+            width: 100%;
+    }
+    }
+
+    .campo__SubmitViaje{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.8rem;
+        
+        @include m.tablet{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
     }
 
@@ -103,5 +98,53 @@
     .campo__label{
         display: block;
         font-weight: 500;
+    }
+}
+
+
+.contenedor-viajes {
+    display: block;
+    margin-top: 5rem;
+
+    @include m.tablet {
+        margin-top: 0;
+    }
+
+    .mensaje {
+        text-align: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .viaje {
+
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    .contenedor-btn-pagar{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8rem;
+
+
+        .boton-pagar{
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 2rem;
+            background-color: #74512D;
+            color: white;
+            border-radius: 1rem;
+            border: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            &:hover{
+                cursor: pointer;
+                background-color: black;
+            }
+        }
     }
 }

@@ -5,9 +5,32 @@
       "Marinilla",
       "El retiro",
       "Rionegro",
+      "Jerico",
+      "Santa fe de Antioquia",
+      "San pedro",
+      "San rafael",
+      "San carlos",
+      "Tamesis",
       "Jardin",
-      "San Pedro",
-      "San felix"
+      "Urrao",
+      "Sonson"
+    ],
+
+    "horarios": [
+        "07:00",
+        "07:30",
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00"
     ],
 
 
@@ -15,23 +38,68 @@
         {
             "origen" : "Medellin",
             "destino" : "Guatape",
-            "precio" : 25000
+            "precio" : 15000
         },
         {
             "origen" : "Medellin",
             "destino" : "Marinilla",
-            "precio" : 19000
+            "precio" : 12000
 
         },
         {
             "origen" : "Medellin",
             "destino" : "El retiro",
-            "precio" : 20000
+            "precio" : 15000
         },
         {
             "origen" : "Medellin",
             "destino" : "Rionegro",
             "precio" : 12000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Jerico",
+            "precio" : 21000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Santa fe de Antioquia",
+            "precio" : 22000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "San pedro",
+            "precio" : 19000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "San rafael",
+            "precio" : 18000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "San carlos",
+            "precio" : 25000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Tamesis",
+            "precio" : 29000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Jardin",
+            "precio" : 33000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Urrao",
+            "precio" : 20000
+        },
+        {
+            "origen" : "Medellin",
+            "destino" : "Sonson",
+            "precio" : 24000
         }
     ]
 }

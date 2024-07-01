@@ -26,7 +26,6 @@
     </header>
 
     <div class="bienvenida">
-        <h3>Bienvenido, nombre :)</h3>
     </div>
 
     <section class="sobre-home">
@@ -34,8 +33,6 @@
         <div class="contenido-home">
             <h2>Busca un viaje</h2>
             <form action="" class="formulario-viaje">
-
-                <!-- Las opciones múltiples de origen y destino se cargan desde viajes.json en src/app.js -->
                 <div class="campo">
                 <label class="campo__label" for="origen">Origen</label>
                 <select class="formulario__campo" id="origen" name="origen">
@@ -51,19 +48,33 @@
                 </div>
 
                 <div class="campofecha">
-                <label class="campo__label" for="fecha">Fecha</label>
-                <input class="formulario__campo" type="date" name = "n_pasajeros" id="n_pasajeros" placeholder="" min="0">
+                    <label class="campo__label" for="fecha">Fecha</label>
+                    <input class="formulario__campo" type="date" name = "n_pasajeros" id="fecha" placeholder="" min="0">
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="hora">Hora</label>
+                    <select class="formulario__campo" id="hora" name="hora">
+                        <option value="">Selecciona horario</option>
+                    </select>              
                 </div>
 
                 <div class="campo">
                 <label class="campo__label" for="n_pasajeros">Número pasajeros</label>
-                <input class="formulario__campo" type="number" name = "n_pasajeros" id="n_pasajeros" placeholder="" min="0" max="10">
+                <input class="formulario__campo" type="number" name = "n_pasajeros" id="n_pasajeros" placeholder="" min="0">
                 </div>
 
-
-                <input class="formulario__submit" type="submit" value="Buscar viaje" class="">
+                <div class="campo__SubmitViaje">
+                <input class="formulario__submitViaje" type="submit" value="Buscar viaje" class="">
+                </div>
             </form>
         </div>
+
+        <div class="contenedor-viajes">
+
+
+        </div>
+
     </section>
 
 
@@ -71,7 +82,9 @@
         <p>Todos los derechos reservados ChivApp 2024 &copy;</p>
     </footer>
 
-    <script src=""></script>
+    <!-- <script src="build/js/app.js"></script>    
+    <script src="build/js/login.js"></script> -->
+    <script src="src/js/home.js"></script>
 
 </body>
 </html>
