@@ -3,7 +3,6 @@
 2. Abrir la carpeta del proyecto en VScode.
 3. En Terminal, crear una nueva terminal.
 4. En la terminal, ejecutar el siguiente comando para instalar las dependencias de package.json:
-   - ```npm init```
    - ```npm install```
 
 Una vez instaladas las dependencias, se puede ejecutar la app con el comando ```node server.cjs``` desde la terminal. Una vez ejecutado el comando podemos abrir el navegador e ingresar la dirección ```http://localhost:3000/``` Donde se podrá ver la aplicación.
