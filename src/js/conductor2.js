@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const viajeId = urlParams.get('id');
+
+    fetch('../../viajesConductor.json')
+        .then(response => response.json())
+        .then(data => {
+            const viaje = data.find(v => v.id == viajeId);
+            if (viaje) {
+                document.getElementById('viaje-info').innerHTML = `
+                    <p><strong>Fecha:</strong> ${viaje.fecha}</p>
+                    <p><strong>Hora de Salida:</strong> ${viaje.horaSalida}</p>
+                    <p><strong>Destino:</strong> ${viaje.destino}</p>
+                    <p><strong>Pasajeros:</strong> ${viaje.pasajeros}</p>
+                `;
+            }
+        })
+        .catch(error => console.error('Error al obtener los detalles del viaje:', error));
+
+    document.querySelector('.btn-terminar').addEventListener('click', () => {
+        const buttonState = JSON.parse(localStorage.getItem('buttonState')) || { enabledButtonId: 1 };
+        const nextEnabledButtonId = parseInt(viajeId) + 1;
+        buttonState.enabledButtonId = nextEnabledButtonId;
+        localStorage.setItem('buttonState', JSON.stringify(buttonState));
+        window.location.href = '../../conductor1.html';
+    });
+});

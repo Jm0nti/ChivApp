@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const contenedorForm = document.querySelector('.contenido-home');
     const contenedorBienvenida = document.querySelector('.bienvenida');
     const nombreUsuario = localStorage.getItem('nombreUsuario');
+    const adminUsuario = localStorage.getItem('adminUsuario');
     const mensajeBienvenida = document.createElement('h3');
     
     
-    mensajeBienvenida.textContent = `Bienvenid@ ${nombreUsuario} :)`;
+    mensajeBienvenida.textContent = `Bienvenid@ ${nombreUsuario} :), eres ${adminUsuario==="true" ? 'administrador' : 'usuario'}`;
     contenedorBienvenida.appendChild(mensajeBienvenida);
 
     formularioViaje.addEventListener('submit', function(e) {
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alerta.remove();
         }, 3000);
     }
+
 
     function mostrarViajes(origen, destino, fecha, horaSeleccionada, n_pasajeros) {
         const url = 'viajes.json';

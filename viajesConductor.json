@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "fecha": "06 de Julio de 2024",
+        "horaSalida": "08:00 AM",
+        "destino": "Medellín",
+        "pasajeros": 15
+    },
+    {
+        "id": 2,
+        "fecha": "06 de Julio de 2024",
+        "horaSalida": "02:00 PM",
+        "destino": "Guatapé",
+        "pasajeros": 10
+    },
+    {
+        "id": 3,
+        "fecha": "06 de Julio de 2024",
+        "horaSalida": "06:00 PM",
+        "destino": "Santa Fe de Antioquia",
+        "pasajeros": 20
+    }
+]

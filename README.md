@@ -26,3 +26,8 @@ Para que estos cambios se reflejen en tiempo real se debe ejecutar el siguiente 
 ```npm run dev```
 
 Así, todos los cambios que se hagan a los archivos de la carpeta src se ven reflejados en el proyecto, que carga elementos de la carpeta build.
+
+
+### Conductor
+Cada viaje tiene una id (viajesConductor.json) y en base a eso funcionan los botones, de modo que no es posible volver a iniciar un viaje cuya id ya ha sido usada.
+Para reiniciar las id, descomentar el comando resetViajes(); que se encuentra en conductor1.js y luego volver a comentarlo.

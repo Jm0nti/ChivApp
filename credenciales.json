@@ -5,56 +5,64 @@
       "pass": "1234",
       "nombre": "Juan",
       "apellido": "Perez",
-      "admin": true
+      "admin": true,
+      "driver":false
     },
     {
       "id": 200000,
       "pass": "1234",
       "nombre": "Pedro",
       "apellido": "Porro",
-      "admin": false
+      "admin": false,
+      "driver": true
     },
     {
       "id": 300000,
       "pass": "1234",
       "nombre": "Andrea",
       "apellido": "Jimenez",
-      "admin": false
+      "admin": false,
+      "driver":false
     },
     {
       "id": 400000,
       "pass": "1234",
       "nombre": "Karen",
       "apellido": "Saavedra",
-      "admin": false
+      "admin": false,
+      "driver":false
     },
     {
       "id": 999999999,
       "pass": "GonorreaPassword",
       "nombre": "Ahora si",
       "apellido": "Perro hijueputa",
-      "admin": false
+      "admin": false,
+      "driver":false
     },
     {
       "id": 5543,
       "pass": "1234",
       "nombre": "Testing",
       "apellido": "Lasss",
-      "admin": false
+      "admin": false,
+      "driver":false
     },
     {
       "id": 20202023012,
       "pass": "123123",
       "nombre": "Lupe",
       "apellido": "Garcia",
-      "admin": false
+      "admin": false,
+      "driver":false
     },
     {
       "id": 12329,
       "pass": "123123",
       "nombre": "Testing",
       "apellido": "Reset",
-      "admin": false
+      "admin": false,
+      "driver":false
     }
   ]
 }
