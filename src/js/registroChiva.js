@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         marca: marcaInput.value,
                         capacidad: parseInt(capacidadInput.value),
                         modelo: parseInt(modeloInput.value),
-                        conductor: null
+                        
                     });
                 }
             })

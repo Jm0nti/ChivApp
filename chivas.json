@@ -27,6 +27,13 @@
       "capacidad": 25,
       "modelo": 2020,
       "conductor": null
+    },
+    {
+      "placa": "FHH487",
+      "marca": "Chevrolet",
+      "capacidad": 25,
+      "modelo": 2001,
+      "conductor": null
     }
   ]
 }
