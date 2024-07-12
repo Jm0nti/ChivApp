@@ -21,7 +21,7 @@
       "pass": "1234",
       "nombre": "Andrea",
       "apellido": "Jimenez",
-      "admin": false,
+      "admin": true,
       "driver":false
     },
     {

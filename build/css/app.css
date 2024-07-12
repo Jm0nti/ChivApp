@@ -936,4 +936,27 @@ body > section {
 
 .detail-container .detail-info h3 {
   margin-top: 0;
+}
+
+.formulario__submitAdmin, .formulario__volver {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición para cambio de color */
+}
+
+.formulario__submitAdmin:hover, .formulario__volver:hover {
+  background-color: #45a049;
+}
+
+.formulario__volver {
+  background-color: #f44336; /* Color de fondo para el botón de volver */
+}
+
+.formulario__volver:hover {
+  background-color: #e53935; /* Color de fondo al pasar el cursor */
 }/*# sourceMappingURL=app.css.map */

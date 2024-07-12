@@ -52,11 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
                 if (usuario) {
                     localStorage.setItem('nombreUsuario', usuario.nombre);
-                    localStorage.setItem('adminUsuario', usuario.admin);
                     if (usuario.driver) {
                         console.log("redirigiendo a conductor1.html");
                         window.location.href = 'conductor1.html';
-                    } else {
+                    }
+                    if (usuario.admin) {
+                        console.log("redirigiendo a admin1.html");
+                        window.location.href = 'admin1.html';
+                    }
+                    else {
                         console.log("redirigiendo a home.html");
                         window.location.href = 'home.html';
                     }
