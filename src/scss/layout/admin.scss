@@ -1,3 +1,25 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario-registroChiva{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0;
+    grid-template-rows: repeat(4, auto);
+    @include m.tablet{
+        @include m.grid(2, 2rem);
+        gap: 2rem;
+    }
+
+    .formulario__campoChiva{
+        border: none;
+        background-color: #e1e1e1;
+        border-radius: 1rem;
+        padding: 1rem;
+        appearance: none;  
+    }
+}
 .formulario__submitAdmin, .formulario__volver {
     background-color: #4CAF50;
     color: white;

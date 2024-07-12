@@ -1,0 +1,18 @@
+{
+    "chivas": [
+        {
+        "placa": "FHH482",
+        "marca": "Chevrolet",
+        "capacidad": 45,
+        "modelo": 2023,
+        "conductor": null
+        },
+        {
+        "placa": "FHH594",
+        "marca": "Chevrolet",
+        "capacidad": 45,
+        "modelo": 2023,
+        "conductor": null
+        }
+    ]
+}
