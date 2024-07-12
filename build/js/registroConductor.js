@@ -1,4 +1,4 @@
-const formRegistro = document.querySelector(".formulario-registro");
+const formRegistro = document.querySelector(".formulario-registroChiva");
 const guiaAlerta = document.querySelector(".guiaAlerta");
 const nombreInput = document.getElementById('nombreInput');
 const apellidoInput = document.getElementById('apellidoInput');
@@ -7,7 +7,7 @@ const passwordInput = document.getElementById('passwordInput');
 const valueID = idInput.value;
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('registro.js loaded');
+    console.log('registroConductor.js loaded');
 
     function mostrarAlerta(mensaje, error = null) {
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         nombre: nombreInput.value,
                         apellido: apellidoInput.value,
                         admin: false,
-                        driver: false
+                        driver: true
                     });
                 }
             })

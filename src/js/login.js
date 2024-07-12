@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         console.log("redirigiendo a conductor1.html");
                         window.location.href = 'conductor1.html';
                     }
-                    if (usuario.admin) {
+                    else if (usuario.admin) {
                         console.log("redirigiendo a admin1.html");
                         window.location.href = 'admin1.html';
                     }

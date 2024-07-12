@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         pass: passwordInput.value,
                         nombre: nombreInput.value,
                         apellido: apellidoInput.value,
-                        admin: false
+                        admin: false,
+                        driver: false
                     });
                 }
             })

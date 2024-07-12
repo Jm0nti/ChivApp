@@ -70,6 +70,14 @@
       "nombre": "Felipe",
       "apellido": "Velez Fernandez",
       "admin": false
+    },
+    {
+      "id": 1234991494,
+      "pass": "Tampa.20",
+      "nombre": "Felipe",
+      "apellido": "Velez Fernandez",
+      "admin": false,
+      "driver": true
     }
   ]
 }
