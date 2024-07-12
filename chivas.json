@@ -1,18 +1,32 @@
 {
-    "chivas": [
-        {
-        "placa": "FHH482",
-        "marca": "Chevrolet",
-        "capacidad": 45,
-        "modelo": 2023,
-        "conductor": null
-        },
-        {
-        "placa": "FHH594",
-        "marca": "Chevrolet",
-        "capacidad": 45,
-        "modelo": 2023,
-        "conductor": null
-        }
-    ]
+  "Chivas": [
+    {
+      "placa": "FHH482",
+      "marca": "Chevrolet",
+      "capacidad": 45,
+      "modelo": 2023,
+      "conductor": null
+    },
+    {
+      "placa": "FHH594",
+      "marca": "Chevrolet",
+      "capacidad": 45,
+      "modelo": 2023,
+      "conductor": null
+    },
+    {
+      "placa": "FHH483",
+      "marca": "Dodge",
+      "capacidad": 35,
+      "modelo": 2020,
+      "conductor": null
+    },
+    {
+      "placa": "FHH484",
+      "marca": "Dodge",
+      "capacidad": 25,
+      "modelo": 2020,
+      "conductor": null
+    }
+  ]
 }

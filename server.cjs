@@ -41,6 +41,41 @@ app.post('/agregar-usuario', (req, res) => {
     });
 });
 
+// Ruta archivo chivas.json
+app.get('/chivas.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'chivas.json'));
+});
+
+// Actualizacion de chivas, agregar chiva
+app.post('/agregar-chiva', (req, res) => {
+    const nuevoChiva = req.body;
+
+    fs.readFile('chivas.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+
+        if (!jsonData.Chivas) {
+            jsonData.Chivas = [];
+        }
+
+        jsonData.Chivas.push(nuevoChiva);
+
+        fs.writeFile('chivas.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Chiva agregado correctamente');
+        });
+    });
+});
+
+
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });

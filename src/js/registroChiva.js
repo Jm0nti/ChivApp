@@ -1,4 +1,4 @@
-const formRegistro = document.querySelector(".formulario-registro");
+const formRegistro = document.querySelector(".formulario-registroChiva");
 const guiaAlerta = document.querySelector(".guiaAlerta");
 const marcaInput = document.getElementById('marcaInput');
 const placaInput = document.getElementById('placaInput');
@@ -33,31 +33,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 
-    function verificarExistenciaUsuario(valueID) {
-        const url = 'credenciales.json';
+    function verificarExistenciaChiva(valueID) {
+        const url = 'chivas.json';
 
-        console.log('verificando existencia de usuario');
+        console.log('verificando existencia de Chiva');
         console.log(placaInput.value);
         console.log(placaInput)
-        console.log(parseInt(placaInput.value))
-        console.log(parseInt(placaInput))
         console.log(typeof(valueID))
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                const usuario = data.usuarios.find(user => user.id == parseInt(placaInput.value));
+                const Chiva = data.Chivas.find(user => user.placa == placaInput.value);
 
-                if (usuario) {
-                    mostrarAlerta('La ID de usuario ya existe', true);
+                if (Chiva) {
+                    mostrarAlerta('La ID de Chiva ya existe', true);
                 } else {
 
-                    agregarUsuario({
-                        id: parseInt(placaInput.value),
-                        pass: modeloInput.value,
-                        nombre: marcaInput.value,
-                        apellido: capacidadInput.value,
-                        admin: false
+                    agregarChiva({
+                        placa: placaInput.value,
+                        marca: marcaInput.value,
+                        capacidad: parseInt(capacidadInput.value),
+                        modelo: parseInt(modeloInput.value),
+                        conductor: null
                     });
                 }
             })
@@ -67,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    function agregarUsuario(nuevoUsuario) {
-        fetch('http://localhost:3000/agregar-usuario', {
+    function agregarChiva(nuevoChiva) {
+        fetch('http://localhost:3000/agregar-Chiva', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(nuevoUsuario),
+            body: JSON.stringify(nuevoChiva),
         })
         .then(response => {
             if (!response.ok) {
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (placaInput.value === "" || modeloInput.value === "" || marcaInput.value === "" || capacidadInput.value === "") {
             mostrarAlerta('Todos los campos son obligatorios', true);
         } else {
-            verificarExistenciaUsuario(valueID); 
+            verificarExistenciaChiva(valueID); 
         }
 
     });
