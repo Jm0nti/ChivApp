@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         modelo: parseInt(modeloInput.value),
                         
                     });
+                    guardarPlaca({
+                        placa: placaInput.value
+                    });
                 }
             })
             .catch(error => {
@@ -86,6 +89,28 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error al enviar datos al servidor:', error);
             mostrarAlerta('Error al enviar datos al servidor', true);
+        });
+    }
+
+    function guardarPlaca(nuevaPlaca) {
+        fetch('http://localhost:3000/guardar-placa', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(nuevaPlaca),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al guardar la placa en el servidor');
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log('Placa guardada:', data);
+        })
+        .catch(error => {
+            console.error('Error al enviar placa al servidor:', error);
         });
     }
     

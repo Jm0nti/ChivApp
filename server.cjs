@@ -75,6 +75,40 @@ app.post('/agregar-chiva', (req, res) => {
     });
 });
 
+// Ruta archivo placas.json
+app.get('/placas.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'placas.json'));
+});
+
+// Guardar solo la placa
+app.post('/guardar-placa', (req, res) => {
+    const nuevaPlaca = req.body;
+
+    fs.readFile('placas.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+
+        if (!jsonData.placas) {
+            jsonData.placas = [];
+        }
+
+        jsonData.placas.push(nuevaPlaca.placa);
+
+        fs.writeFile('placas.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Placa guardada correctamente');
+        });
+    });
+});
+
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);

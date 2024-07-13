@@ -34,6 +34,18 @@
       "capacidad": 25,
       "modelo": 2001,
       "conductor": null
+    },
+    {
+      "placa": "YOQ394",
+      "marca": "Dodge",
+      "capacidad": 34,
+      "modelo": 2020
+    },
+    {
+      "placa": "TNF445",
+      "marca": "Dodge",
+      "capacidad": 34,
+      "modelo": 2020
     }
   ]
 }

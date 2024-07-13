@@ -81,46 +81,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error al cargar el JSON:', error);
             });
     }
+
     function cargarChivas() {
         const url = 'chivas.json';
-    
-        try {
-            const response = fetch(url);
-            
-            // Verifica que la respuesta sea un objeto Response válido
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-    
-            const data = response.json();
-            const chivas = data.Chivas;
-    
-            // Crear una lista con todas las placas
-            const placas = chivas.map(chiva => chiva.placa);
-    
-            // Mostrar las placas en la consola (puedes hacer otras operaciones con esta lista)
-            console.log(placas);
-    
-            // Insertar las placas en el menú desplegable
-            const placaSelect = document.getElementById('placas');
-            if (!placaSelect) {
-                console.error('El elemento con el ID "placas" no existe.');
-                return;
-            }
-    
-            placas.forEach(placa => {
-                const opcionPlaca = document.createElement('option');
-                opcionPlaca.value = placa;
-                opcionPlaca.textContent = placa;
-                placaSelect.appendChild(opcionPlaca);
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const chivas = data.Chivas;
+                const horaSelect = document.getElementById('hora');
+
+                chivas.forEach(horario => {
+                    const opcionHora = document.createElement('option');
+                    opcionHora.value = horario;
+                    opcionHora.textContent = horario;
+                    horaSelect.appendChild(opcionHora);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar el JSON:', error);
             });
-        } catch (error) {
-            console.error('Error al cargar el JSON:', error);
-        }
     }
-    
-    // Ejecutar la función cuando la página se haya cargado
-
-
-
 });
