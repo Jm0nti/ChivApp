@@ -46,6 +46,18 @@
       "marca": "Dodge",
       "capacidad": 34,
       "modelo": 2020
+    },
+    {
+      "placa": "TKJ777",
+      "marca": "Ford",
+      "capacidad": 35,
+      "modelo": 2002
+    },
+    {
+      "placa": "HLJ234",
+      "marca": "Reneault",
+      "capacidad": 40,
+      "modelo": 2000
     }
   ]
 }
