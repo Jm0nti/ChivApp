@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cargarCiudades();
     cargarChivas();
 
+
     function cargarCiudades() {
         const url = 'viajes.json';
 
@@ -81,25 +82,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error al cargar el JSON:', error);
             });
     }
-
     function cargarChivas() {
-        const url = 'chivas.json';
+        const url = 'placas.json';
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                const chivas = data.Chivas;
-                const horaSelect = document.getElementById('hora');
-
-                chivas.forEach(horario => {
-                    const opcionHora = document.createElement('option');
-                    opcionHora.value = horario;
-                    opcionHora.textContent = horario;
-                    horaSelect.appendChild(opcionHora);
+                const placas = data.placas;
+                const placaSelect = document.getElementById('chiva');
+                placas.forEach(placa => {
+                    const opcionplaca = document.createElement('option');
+                    opcionplaca.value = placa;
+                    opcionplaca.textContent = placa;
+                    placaSelect.appendChild(opcionplaca);
                 });
             })
             .catch(error => {
                 console.error('Error al cargar el JSON:', error);
             });
     }
+
 });
