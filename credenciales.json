@@ -87,6 +87,15 @@
       "chiva": "TKJ777",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 900000,
+      "pass": "lorenzoneta",
+      "nombre": "Richard",
+      "apellido": "Rios",
+      "placa": "TKJ777",
+      "admin": false,
+      "driver": true
     }
   ]
 }

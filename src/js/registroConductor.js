@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         pass: passwordInput.value,
                         nombre: nombreInput.value,
                         apellido: apellidoInput.value,
-                        chiva: placaInput.value,
+                        placa: placaInput.value,
+
                         admin: false,
                         driver: true
                     });
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const placas = data.placas;
-                const placaSelect = document.getElementById('chiva');
+                const placaSelect = document.getElementById('placaInput');
                 placas.forEach(placa => {
                     const opcionplaca = document.createElement('option');
                     opcionplaca.value = placa;
