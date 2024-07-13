@@ -109,6 +109,39 @@ app.post('/guardar-placa', (req, res) => {
     });
 });
 
+// Ruta archivo chivas.json
+app.get('/viajes.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'chivas.json'));
+});
+
+// Actualizacion de chivas, agregar chiva
+app.post('/agregar-Viaje', (req, res) => {
+    const nuevoViaje = req.body;
+
+    fs.readFile('viajes.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+
+        if (!jsonData.viajes) {
+            jsonData.viajes = [];
+        }
+
+        jsonData.viajes.push(nuevoViaje);
+
+        fs.writeFile('viajes.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Viaje agregado correctamente');
+        });
+    });
+});
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
