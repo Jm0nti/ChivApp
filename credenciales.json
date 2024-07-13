@@ -78,6 +78,15 @@
       "apellido": "Velez Fernandez",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 800000,
+      "pass": "1234",
+      "nombre": "Jairo",
+      "apellido": "Guzmán Ordoñez",
+      "chiva": "TKJ777",
+      "admin": false,
+      "driver": true
     }
   ]
 }

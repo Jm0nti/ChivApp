@@ -4,6 +4,7 @@ const nombreInput = document.getElementById('nombreInput');
 const apellidoInput = document.getElementById('apellidoInput');
 const idInput = document.getElementById('idInput');
 const passwordInput = document.getElementById('passwordInput');
+const placaInput = document.getElementById('placaInput');
 const valueID = idInput.value;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         pass: passwordInput.value,
                         nombre: nombreInput.value,
                         apellido: apellidoInput.value,
+                        chiva: placaInput.value,
                         admin: false,
                         driver: true
                     });
@@ -67,6 +69,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 mostrarAlerta('Error al cargar los datos', true);
             });
     }
+
+    //desde aquí
+    cargarChivas();
+
+    function cargarChivas() {
+        const url = 'placas.json';
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const placas = data.placas;
+                const placaSelect = document.getElementById('chiva');
+                placas.forEach(placa => {
+                    const opcionplaca = document.createElement('option');
+                    opcionplaca.value = placa;
+                    opcionplaca.textContent = placa;
+                    placaSelect.appendChild(opcionplaca);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar el JSON:', error);
+            });
+    }
+    //desde aquí
 
     function agregarUsuario(nuevoUsuario) {
         fetch('http://localhost:3000/agregar-usuario', {

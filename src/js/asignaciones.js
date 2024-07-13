@@ -102,4 +102,68 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
+    //Desde acá
+    function verificarExistenciaViaje(valueID) {
+        const url = 'viajes.json';
+
+        console.log('verificando existencia de Viaje');
+        console.log(placaInput.value);
+        console.log(placaInput)
+        console.log(typeof(valueID))
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const Chiva = false
+
+                if (Chiva) {
+                    mostrarAlerta('La ID de Chiva ya existe', true);
+                } else {
+
+                    agregarViaje({
+                        origen: origen.value,
+                        destino: destino.value,
+                        fecha: fecha.value,
+                        hpra: hora.value,
+                        n_pasajeros: n_pasajeros.value,
+                        chivaSeleccionada: chivaSeleccionada.value,
+                        
+                        
+                    });
+                    guardarPlaca({
+                        placa: placaInput.value
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error al cargar el JSON:', error);
+                mostrarAlerta('Error al cargar los datos', true);
+            });
+    }
+
+    function agregarViaje(nuevoChiva) {
+        fetch('http://localhost:3000/agregar-Viaje', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(nuevoChiva),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al guardar los datos en el servidor');
+            }
+            return response.text();
+        })
+        .then(data => {
+            mostrarAlerta(data);
+            formRegistro.reset();
+        })
+        .catch(error => {
+            console.error('Error al enviar datos al servidor:', error);
+            mostrarAlerta('Error al enviar datos al servidor', true);
+        });
+    }
+
+//Hata acá
 });
