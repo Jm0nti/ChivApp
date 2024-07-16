@@ -58,6 +58,12 @@
       "marca": "Reneault",
       "capacidad": 40,
       "modelo": 2000
+    },
+    {
+      "placa": "FBI420",
+      "marca": "Samsung",
+      "capacidad": 25,
+      "modelo": 2000
     }
   ]
 }

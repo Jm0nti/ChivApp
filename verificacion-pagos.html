@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChivApp - Viaja por Antioquia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1><a href="index.html">ChivApp</a></h1>
+            <nav class="navegacion-principal">
+                <a href="index.html">Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+    <div class="admin1">
+    </div>
+    <section class="registro-chiva">
+        <div class="contenido-registro">
+            <h2>Registrar un Viaje</h2>
+            <form action="" class="formulario-registroChiva">
+
+                
+                <input class="formulario__campoChiva" type="text" name="nombre" id="OrigenInput" placeholder="Origen">
+                <input class="formulario__campoChiva" type="text" name="apellido" id="DestinoInput" placeholder="Destino">
+                <input class="formulario__campoChiva" type="number" name = "ID" id="IdInput" placeholder="ID">
+                <input class="formulario__campoChiva" type="date" name="Password" id="FechaInput" placeholder="Fecha">
+
+                <input class="formulario__campoChiva" type="number" name="Precio" id="PrecioInput" placeholder="Precio">
+                <input class="formulario__campoChiva" type="number" name="Np" id="NpInput" placeholder="Número de pasajeros">
+                <input class="formulario__campoChiva" type="text" name="Np" id="HoraInput" placeholder="Hora">
+
+                
+                    
+                <select class="formulario__campoChiva" id="PlacaInput" name="placaInput">
+                    <option value="">Selecciona Chiva</option>
+                </select>              
+                           
+               
+
+                
+                
+                <input class="formulario__submitAdmin" type="submit" value="Registrar" class="">
+                <a href="admin1.html" class="formulario__volver">Volver</a>
+                </div>
+            </form>
+            <p class="nocuenta guiaAlerta" id="guiaAlerta"></p>
+        </div>
+    </section>
+
+
+<footer class="contenedor-footer">
+    <p>Todos los derechos reservados ChivApp 2024 &copy;</p>
+</footer>
+    <script src="src/js/verificacion-pagos.js"></script>
+
+</body>
+</html>

@@ -111,11 +111,11 @@ app.post('/guardar-placa', (req, res) => {
 
 // Ruta archivo chivas.json
 app.get('/viajes.json', (req, res) => {
-    res.sendFile(path.join(__dirname, 'chivas.json'));
+    res.sendFile(path.join(__dirname, 'viajes.json'));
 });
 
 // Actualizacion de chivas, agregar chiva
-app.post('/agregar-Viaje', (req, res) => {
+app.post('/agregar-viaje', (req, res) => {
     const nuevoViaje = req.body;
 
     fs.readFile('viajes.json', 'utf8', (err, data) => {
@@ -146,3 +146,4 @@ app.post('/agregar-Viaje', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
+
