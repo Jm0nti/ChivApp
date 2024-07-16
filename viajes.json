@@ -106,6 +106,26 @@
       "precio": "5000",
       "Aforo": 65,
       "Hora": 6757
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Santa fe de Antioquia",
+      "id": 1234,
+      "fecha": "2024-07-31",
+      "placa": "TKJ777",
+      "precio": "2154",
+      "Aforo": 23,
+      "Hora": 9
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Sonson",
+      "id": 435,
+      "fecha": "2024-07-30",
+      "placa": "HLJ234",
+      "precio": "4000",
+      "Aforo": 23,
+      "Hora": "14:00"
     }
   ]
 }

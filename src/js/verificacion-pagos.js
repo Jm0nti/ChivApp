@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         placa: PlacaInput.value,
                         precio: PrecioInput.value,
                         Aforo: parseInt(NpInput.value),
-                        Hora: parseInt(HoraInput.value),
+                        Hora: HoraInput.value,
 
                         
                     });
@@ -77,8 +77,48 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    
+    // Cargar opciones de origen y destino
+    cargarCiudades();
     cargarChivas();
+    
+    
+    function cargarCiudades() {
+        const url = 'viajes.json';
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const horarios = data.horarios;
+                const ciudades = data.ciudades;
+                const origenSelect = document.getElementById('OrigenInput');
+                const destinoSelect = document.getElementById('DestinoInput');
+                const horaSelect = document.getElementById('HoraInput');
+
+                ciudades.forEach(ciudad => {
+                    const opcionOrigen = document.createElement('option');
+                    opcionOrigen.value = ciudad;
+                    opcionOrigen.textContent = ciudad;
+                    origenSelect.appendChild(opcionOrigen);
+
+                    const opcionDestino = document.createElement('option');
+                    opcionDestino.value = ciudad;
+                    opcionDestino.textContent = ciudad;
+                    destinoSelect.appendChild(opcionDestino);
+                });
+
+                horarios.forEach(horario => {
+                    const opcionHora = document.createElement('option');
+                    opcionHora.value = horario;
+                    opcionHora.textContent = horario;
+                    horaSelect.appendChild(opcionHora);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar el JSON:', error);
+            });
+    }
+    
+    //ojito
 
     function cargarChivas() {
         const url = 'placas.json';
