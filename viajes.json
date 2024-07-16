@@ -126,6 +126,16 @@
       "precio": "4000",
       "Aforo": 23,
       "Hora": "14:00"
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Marinilla",
+      "id": 3245,
+      "fecha": "2024-07-18",
+      "placa": "TKJ777",
+      "precio": "1334",
+      "Aforo": 23,
+      "Hora": "15:00"
     }
   ]
 }

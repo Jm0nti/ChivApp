@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const horaSeleccionada = document.getElementById('hora').value;
         const n_pasajeros = document.getElementById('n_pasajeros').value;
 
-        if (origen === '' || destino === '' || fecha === '' || horaSeleccionada === '' || n_pasajeros === '') {
+        if (origen === '' || destino === '' || n_pasajeros === '') {
             mostrarAlerta('Todos los campos son obligatorios', true);
         } else if (n_pasajeros>10) {
             mostrarAlerta('Puedes comprar como máximo 10 tickets', true);
