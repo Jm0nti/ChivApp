@@ -675,7 +675,7 @@ body > section {
 }
 .formulario-registro .formulario__campo {
   border: none;
-  background-color: #e1e1e1;
+  background-color: #e1e1e2;
   border-radius: 1rem;
   padding: 1rem;
   appearance: none;
@@ -716,7 +716,8 @@ body > section {
   text-decoration: underline;
 }
 
-.error, .correcto {
+.error,
+.correcto {
   font-size: 1.4rem;
 }
 
@@ -1014,4 +1015,104 @@ body > section {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.contenido-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.formulario-viaje {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group input[type=text],
+.form-group input[type=file] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input[type=text]:focus,
+.form-group input[type=file]:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.form-group input[type=file] {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.qr-section {
+  text-align: center;
+}
+
+.qr-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos globales para la aplicación pueden ir aquí */
+.contenido-confirmacion {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmacion-exito {
+  color: green;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.confirmacion-error {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.detalles-pago {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.detalles-pago p {
+  margin: 5px 0;
 }/*# sourceMappingURL=app.css.map */

@@ -1,4 +1,4 @@
-const formRegistro = document.querySelector(".formulario-registro");
+buildconst formRegistro = document.querySelector(".formulario-registro");
 const guiaAlerta = document.querySelector(".guiaAlerta");
 const nombreInput = document.getElementById('nombreInput');
 const apellidoInput = document.getElementById('apellidoInput');
