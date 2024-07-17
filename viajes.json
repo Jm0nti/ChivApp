@@ -98,74 +98,849 @@
       "precio": 24000
     },
     {
-      "origen": "Colom",
-      "destino": "fuy",
-      "id": 4565,
-      "fecha": "2024-07-21",
-      "placa": "HLJ234",
-      "precio": "5000",
-      "Aforo": 65,
-      "Hora": 6757
+      "origen": "Guatape",
+      "destino": "Medellin",
+      "precio": 15000
     },
     {
-      "origen": "Jerico",
+      "origen": "Guatape",
+      "destino": "Marinilla",
+      "precio": 15000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "El retiro",
+      "precio": 18000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "Rionegro",
+      "precio": 17000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "Jerico",
+      "precio": 24000
+    },
+    {
+      "origen": "Guatape",
       "destino": "Santa fe de Antioquia",
-      "id": 1234,
-      "fecha": "2024-07-31",
-      "placa": "TKJ777",
-      "precio": "2154",
-      "Aforo": 23,
-      "Hora": 9
+      "precio": 25000
     },
     {
-      "origen": "Tamesis",
+      "origen": "Guatape",
+      "destino": "San pedro",
+      "precio": 22000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "Guatape",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "Guatape",
       "destino": "Sonson",
-      "id": 435,
-      "fecha": "2024-07-30",
-      "placa": "HLJ234",
-      "precio": "4000",
-      "Aforo": 23,
-      "Hora": "14:00"
+      "precio": 27000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Medellin",
+      "precio": 12000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Guatape",
+      "precio": 15000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "El retiro",
+      "precio": 12000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Rionegro",
+      "precio": 3000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Jerico",
+      "precio": 21000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Santa fe de Antioquia",
+      "precio": 22000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "San pedro",
+      "precio": 19000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "San rafael",
+      "precio": 18000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "San carlos",
+      "precio": 25000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Tamesis",
+      "precio": 29000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Jardin",
+      "precio": 33000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Urrao",
+      "precio": 20000
+    },
+    {
+      "origen": "Marinilla",
+      "destino": "Sonson",
+      "precio": 24000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Medellin",
+      "precio": 15000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Guatape",
+      "precio": 18000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Marinilla",
+      "precio": 12000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Rionegro",
+      "precio": 17000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Jerico",
+      "precio": 24000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Santa fe de Antioquia",
+      "precio": 25000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "San pedro",
+      "precio": 22000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "El retiro",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Medellin",
+      "precio": 12000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Guatape",
+      "precio": 17000
     },
     {
       "origen": "Rionegro",
       "destino": "Marinilla",
-      "id": 3245,
-      "fecha": "2024-07-18",
-      "placa": "TKJ777",
-      "precio": "1334",
-      "Aforo": 23,
-      "Hora": "15:00"
+      "precio": 3000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "El retiro",
+      "precio": 17000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Jerico",
+      "precio": 24000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Santa fe de Antioquia",
+      "precio": 25000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "San pedro",
+      "precio": 22000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "Rionegro",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Medellin",
+      "precio": 21000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Guatape",
+      "precio": 24000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Marinilla",
+      "precio": 21000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "El retiro",
+      "precio": 24000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Rionegro",
+      "precio": 24000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Santa fe de Antioquia",
+      "precio": 25000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "San pedro",
+      "precio": 22000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "Jerico",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Medellin",
+      "precio": 22000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Guatape",
+      "precio": 25000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Marinilla",
+      "precio": 22000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "El retiro",
+      "precio": 25000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Rionegro",
+      "precio": 25000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Jerico",
+      "precio": 25000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "San pedro",
+      "precio": 22000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "Santa fe de Antioquia",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Medellin",
+      "precio": 19000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Guatape",
+      "precio": 22000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Marinilla",
+      "precio": 19000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "El retiro",
+      "precio": 22000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Rionegro",
+      "precio": 22000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Jerico",
+      "precio": 22000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Santa fe de Antioquia",
+      "precio": 22000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "San rafael",
+      "precio": 21000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "San pedro",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Medellin",
+      "precio": 18000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Guatape",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Marinilla",
+      "precio": 18000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "El retiro",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Rionegro",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Jerico",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Santa fe de Antioquia",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "San pedro",
+      "precio": 21000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "San carlos",
+      "precio": 28000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Urrao",
+      "precio": 23000
+    },
+    {
+      "origen": "San rafael",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Medellin",
+      "precio": 25000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Guatape",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Marinilla",
+      "precio": 25000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "El retiro",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Rionegro",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Jerico",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Santa fe de Antioquia",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "San pedro",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "San rafael",
+      "precio": 28000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Tamesis",
+      "precio": 32000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Jardin",
+      "precio": 36000
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Urrao",
+      "precio": 23000
     },
     {
       "origen": "San carlos",
       "destino": "Sonson",
-      "id": 1,
-      "fecha": "2024-07-30",
-      "placa": "TMU650",
-      "precio": "25000",
-      "Aforo": 35,
-      "Hora": "15:30"
+      "precio": 27000
     },
     {
-      "origen": "Medellin",
+      "origen": "Tamesis",
+      "destino": "Medellin",
+      "precio": 29000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Guatape",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Marinilla",
+      "precio": 29000
+    },
+    {
+      "origen": "Tamesis",
       "destino": "El retiro",
-      "id": 45,
-      "fecha": "2024-07-19",
-      "placa": "TNF445",
-      "precio": "24000",
-      "Aforo": 34,
-      "Hora": "15:00"
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Rionegro",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Jerico",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Santa fe de Antioquia",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "San pedro",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "San rafael",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "San carlos",
+      "precio": 32000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Jardin",
+      "precio": 36000
     },
     {
       "origen": "Tamesis",
       "destino": "Urrao",
-      "id": 250,
-      "fecha": "2024-07-18",
-      "placa": "RAV420",
-      "precio": "30000",
-      "Aforo": 36,
-      "Hora": "15:30"
+      "precio": 30000
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Sonson",
+      "precio": 27000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Medellin",
+      "precio": 33000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Guatape",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Marinilla",
+      "precio": 33000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "El retiro",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Rionegro",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Jerico",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Santa fe de Antioquia",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "San pedro",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "San rafael",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "San carlos",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Tamesis",
+      "precio": 36000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Urrao",
+      "precio": 33000
+    },
+    {
+      "origen": "Jardin",
+      "destino": "Sonson",
+      "precio": 30000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Medellin",
+      "precio": 20000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Guatape",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Marinilla",
+      "precio": 20000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "El retiro",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Rionegro",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Jerico",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Santa fe de Antioquia",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "San pedro",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "San rafael",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "San carlos",
+      "precio": 23000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Tamesis",
+      "precio": 30000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Jardin",
+      "precio": 33000
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Sonson",
+      "precio": 30000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Medellin",
+      "precio": 24000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Guatape",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Marinilla",
+      "precio": 24000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "El retiro",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Rionegro",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Jerico",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Santa fe de Antioquia",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "San pedro",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "San rafael",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "San carlos",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Tamesis",
+      "precio": 27000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Jardin",
+      "precio": 30000
+    },
+    {
+      "origen": "Sonson",
+      "destino": "Urrao",
+      "precio": 30000
     }
   ]
 }
