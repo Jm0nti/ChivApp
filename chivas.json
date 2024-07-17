@@ -70,6 +70,12 @@
       "marca": "Internacional",
       "capacidad": 35,
       "modelo": 1978
+    },
+    {
+      "placa": "RAV420",
+      "marca": "Dodge",
+      "capacidad": 40,
+      "modelo": 2020
     }
   ]
 }

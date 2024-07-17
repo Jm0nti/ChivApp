@@ -105,6 +105,15 @@
       "placa": "TMU650",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 98,
+      "pass": "melissa",
+      "nombre": "Juan Pablo ",
+      "apellido": "Castaño",
+      "placa": "RAV420",
+      "admin": false,
+      "driver": true
     }
   ]
 }

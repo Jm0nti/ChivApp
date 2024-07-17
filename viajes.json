@@ -156,6 +156,16 @@
       "precio": "24000",
       "Aforo": 34,
       "Hora": "15:00"
+    },
+    {
+      "origen": "Tamesis",
+      "destino": "Urrao",
+      "id": 250,
+      "fecha": "2024-07-18",
+      "placa": "RAV420",
+      "precio": "30000",
+      "Aforo": 36,
+      "Hora": "15:30"
     }
   ]
 }
