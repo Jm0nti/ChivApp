@@ -96,6 +96,15 @@
       "placa": "TKJ777",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 546583,
+      "pass": "Ofelia",
+      "nombre": "Hernando de Jesus",
+      "apellido": "Velez Castaño",
+      "placa": "TMU650",
+      "admin": false,
+      "driver": true
     }
   ]
 }

@@ -64,6 +64,12 @@
       "marca": "Samsung",
       "capacidad": 25,
       "modelo": 2000
+    },
+    {
+      "placa": "TMU650",
+      "marca": "Internacional",
+      "capacidad": 35,
+      "modelo": 1978
     }
   ]
 }

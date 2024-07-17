@@ -136,6 +136,26 @@
       "precio": "1334",
       "Aforo": 23,
       "Hora": "15:00"
+    },
+    {
+      "origen": "San carlos",
+      "destino": "Sonson",
+      "id": 1,
+      "fecha": "2024-07-30",
+      "placa": "TMU650",
+      "precio": "25000",
+      "Aforo": 35,
+      "Hora": "15:30"
+    },
+    {
+      "origen": "Medellin",
+      "destino": "El retiro",
+      "id": 45,
+      "fecha": "2024-07-19",
+      "placa": "TNF445",
+      "precio": "24000",
+      "Aforo": 34,
+      "Hora": "15:00"
     }
   ]
 }
