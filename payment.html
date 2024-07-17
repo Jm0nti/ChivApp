@@ -29,6 +29,7 @@
         <h2>Pagar con Tarjeta</h2>
         <form
           action="confirmacion.html"
+          method="POST"
           class="formulario-viaje"
           id="card-payment-form"
         >
@@ -36,7 +37,6 @@
             <label for="card-number">Número de Tarjeta:</label>
             <input type="text" id="card-number" name="card-number" required />
           </div>
-
           <div class="form-group">
             <label for="card-expiry">Fecha de Expiración:</label>
             <input
@@ -47,12 +47,11 @@
               required
             />
           </div>
-
           <div class="form-group">
             <label for="card-cvc">CVC:</label>
             <input type="text" id="card-cvc" name="card-cvc" required />
           </div>
-
+          <input type="hidden" id="total-amount" name="total-amount" />
           <button type="submit">Pagar</button>
           <button type="button" id="back-to-payment-options">
             Volver a Opciones de Pago
