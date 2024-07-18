@@ -51,10 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const usuario = data.viajes.find(user => user.id == parseInt(IdInput.value));
+                const horaelegida = data.viajes.find(user => user.Hora == HoraInput.value);
+                const placaelegida = data.viajes.find(user => user.placa == PlacaInput.value);
+                const diaelegido = data.viajes.find(user => user.fecha == FechaInput.value);
 
                 if (usuario) {
-                    mostrarAlerta('La ID de usuario ya existe', true);
-                } else {
+                    mostrarAlerta('La ID de viaje ya existe', true);
+                } 
+                else if(horaelegida && placaelegida && diaelegido){
+                    mostrarAlerta('La chiva esta ocupada', true);
+                }
+                else {
 
                     agregarViaje({
                         
