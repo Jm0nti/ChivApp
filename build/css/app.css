@@ -939,6 +939,48 @@ body > section {
   margin-top: 0;
 }
 
+.contenido-admin {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.contenido-admin h2 {
+  margin: none;
+  padding: 0;
+  text-align: center;
+}
+
+.botones-admin {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding-top: 0;
+}
+.botones-admin .botonesAdmin {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.botones-admin .botonesAdmin a {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.botones-admin .botonesAdmin a:hover {
+  background-color: #0056b3;
+}
+
+.registro-chiva {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 .formulario-registroChiva {
   display: flex;
   flex-direction: column;
@@ -965,12 +1007,24 @@ body > section {
 .formulario__submitAdmin, .formulario__volver {
   background-color: #4CAF50;
   color: white;
+  text-align: center;
   padding: 10px 20px;
   font-size: 16px;
+  font-weight: 700;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Transición para cambio de color */
+}
+
+.formulario__volver--right {
+  grid-column: 2/3;
+  grid-row: auto;
+}
+
+.formulario__submitAdmin--left {
+  grid-column: 1/2;
+  grid-row: auto;
 }
 
 .formulario__submitAdmin:hover, .formulario__volver:hover {
@@ -988,27 +1042,6 @@ body > section {
 .imagenAdmin {
   flex: 1;
   margin-right: 20px;
-}
-
-.botonesAdmin {
-  display: flex;
-  flex-direction: column;
-}
-
-.botonesAdmin a {
-  margin-bottom: 10px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-
-.botonesAdmin a:hover {
-  background-color: #0056b3;
 }
 
 .imagen img {

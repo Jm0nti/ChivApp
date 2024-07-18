@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     fetch('../../viajesConductor.json')
         .then(response => response.json())
         .then(data => {
