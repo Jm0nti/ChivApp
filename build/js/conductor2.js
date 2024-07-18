@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const viajeId = urlParams.get('id');
 
-    fetch('../../viajesConductor.json')
+    fetch('../../viajes.json')
         .then(response => response.json())
         .then(data => {
-            const viaje = data.find(v => v.id == viajeId);
+            const viaje = data.viajes.find(v => v.id == viajeId);
             if (viaje) {
                 document.getElementById('viaje-info').innerHTML = `
                     <p><strong>Fecha:</strong> ${viaje.fecha}</p>
-                    <p><strong>Hora de Salida:</strong> ${viaje.horaSalida}</p>
+                    <p><strong>Hora de Salida:</strong> ${viaje.Hora}</p>
                     <p><strong>Destino:</strong> ${viaje.destino}</p>
                     <p><strong>Pasajeros:</strong> ${viaje.pasajeros}</p>
                 `;

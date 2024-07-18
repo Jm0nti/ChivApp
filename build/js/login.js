@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (usuario) {
                     localStorage.setItem('nombreUsuario', usuario.nombre);
                     if (usuario.driver) {
+                        localStorage.setItem('placachiva', usuario.placa);
                         console.log("redirigiendo a conductor1.html");
                         window.location.href = 'conductor1.html';
                     }

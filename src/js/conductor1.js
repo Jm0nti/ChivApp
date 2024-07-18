@@ -1,21 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('../../viajesConductor.json')
+    const placafiltro = localStorage.getItem('placachiva');
+    console.log(placafiltro)
+    fetch('../../viajes.json')
         .then(response => response.json())
         .then(data => {
             const viajesContainer = document.querySelector('.viajes');
             const buttonState = JSON.parse(localStorage.getItem('buttonState')) || { enabledButtonId: 1 };
             const enabledButtonId = buttonState.enabledButtonId;
+            const viajesFiltrados = data.viajes.filter(viaje => viaje.placa === placafiltro);
+            console.log(viajesFiltrados)
+            
 
-            data.forEach((viaje, index) => {
+            viajesFiltrados.forEach((viaje, index) => {
                 const viajeDiv = document.createElement('div');
                 viajeDiv.classList.add('viaje');
 
                 viajeDiv.innerHTML = `
                     <h3>Viaje ${viaje.id}</h3>
                     <p><strong>Fecha:</strong> ${viaje.fecha}</p>
-                    <p><strong>Hora de Salida:</strong> ${viaje.horaSalida}</p>
+                    <p><strong>Hora de Salida:</strong> ${viaje.Hora}</p>
                     <p><strong>Destino:</strong> ${viaje.destino}</p>
-                    <p><strong>Pasajeros:</strong> ${viaje.pasajeros}</p>
+                    <p><strong>Pasajeros:</strong> ${viaje.Aforo}</p>
                     <button class="btn-iniciar" data-id="${viaje.id}" ${viaje.id == enabledButtonId ? '' : 'disabled'}>Iniciar Viaje</button>
                 `;
 
