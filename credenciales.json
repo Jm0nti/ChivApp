@@ -140,6 +140,15 @@
       "placa": "TNF445",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 999,
+      "pass": "999",
+      "nombre": "Juan Pablo ",
+      "apellido": "Aristigol",
+      "placa": "HLJ234",
+      "admin": false,
+      "driver": true
     }
   ]
 }
