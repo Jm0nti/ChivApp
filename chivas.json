@@ -76,6 +76,12 @@
       "marca": "Dodge",
       "capacidad": 40,
       "modelo": 2020
+    },
+    {
+      "placa": "FHH456",
+      "marca": "Chevrolet",
+      "capacidad": 6,
+      "modelo": 2020
     }
   ]
 }

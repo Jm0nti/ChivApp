@@ -114,6 +114,32 @@
       "placa": "RAV420",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 345,
+      "pass": "543",
+      "nombre": "Pedro",
+      "apellido": "Aristigol",
+      "admin": false,
+      "driver": false
+    },
+    {
+      "id": 789,
+      "pass": "987",
+      "nombre": "Juan Luis",
+      "apellido": "Montiel",
+      "placa": "FHH456",
+      "admin": false,
+      "driver": true
+    },
+    {
+      "id": 369,
+      "pass": "963",
+      "nombre": "Juan Pablo ",
+      "apellido": "Aristigol",
+      "placa": "TNF445",
+      "admin": false,
+      "driver": true
     }
   ]
 }

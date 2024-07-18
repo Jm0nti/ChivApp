@@ -48,10 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const usuario = data.usuarios.find(user => user.id == parseInt(idInput.value));
-
+                const placa = data.usuarios.find(user => user.placa == placaInput.value)
                 if (usuario) {
                     mostrarAlerta('La ID de usuario ya existe', true);
-                } else {
+                
+                } 
+                else if(placa){
+                    mostrarAlerta('La Chiva ya tiene conductor asignado', true);
+                } 
+                else {
 
                     agregarUsuario({
                         id: parseInt(idInput.value),
