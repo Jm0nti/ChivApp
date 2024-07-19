@@ -8,23 +8,42 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+
+  button{
+    background-color: #0077b6;
+    font-weight: 700;
+    border-radius: 1rem;
+  }
 }
 
 .confirmacion-exito {
   color: green;
-  font-size: 24px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
 .confirmacion-error {
   color: red;
-  font-size: 24px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
 .detalles-pago {
   text-align: left;
   margin-bottom: 20px;
+
+  .pago-aceptado, .pago-rechazado {
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+
+  .pago-aceptado{
+    color: green;
+  }
+
+  .pago-rechazado{
+    color: red; 
+  }
 }
 
 .detalles-pago p {

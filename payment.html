@@ -4,8 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagar Reserva - ChivAPP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
+
+
   <body>
     <header class="header">
       <div class="contenedor contenido-header">
@@ -16,15 +33,17 @@
       </div>
     </header>
 
-    <section id="payment-options">
+    <section class="payment-options"  id="payment-options">
       <div class="contenido-card">
         <h2>Elige una opción de pago</h2>
+        <div class="botones-opciones-pago">
         <button id="pay-with-card-btn">Pagar con Tarjeta</button>
         <button id="pay-with-qr-btn">Pagar con QR</button>
+        </div>
       </div>
     </section>
 
-    <section id="card-payment-section" style="display: none">
+    <section class="card-payment" id="card-payment-section" style="display: none">
       <div class="contenido-card">
         <h2>Pagar con Tarjeta</h2>
         <form
@@ -52,14 +71,14 @@
           </div>
           <input type="hidden" id="total-amount" name="total-amount" />
           <button type="submit">Pagar</button>
-          <button type="button" id="back-to-payment-options">
+          <button type="button" class="button-volver-pago" id="back-to-payment-options">
             Volver a Opciones de Pago
           </button>
         </form>
       </div>
     </section>
 
-    <section id="qr-payment-section" style="display: none">
+    <section class="qr-payment"  id="qr-payment-section" style="display: none">
       <div class="contenido-card">
         <h2>Pagar con QR</h2>
         <div class="qr-section">
@@ -79,7 +98,7 @@
           </div>
 
           <button type="submit">Enviar</button>
-          <button type="button" id="back-to-payment-options-qr">
+          <button type="button" class="button-volver-pago" id="back-to-payment-options-qr">
             Volver a Opciones de Pago
           </button>
         </form>

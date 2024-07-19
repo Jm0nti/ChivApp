@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const formularioViaje = document.querySelector(".formulario-viaje");
+  const formularioViaje = document.querySelector(".formulario-viaje--usuario");
   const contenedorViajes = document.querySelector(".contenedor-viajes");
   const contenedorForm = document.querySelector(".contenido-home");
   const contenedorBienvenida = document.querySelector(".bienvenida");
@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const adminUsuario = localStorage.getItem("adminUsuario");
   const mensajeBienvenida = document.createElement("h3");
 
-  mensajeBienvenida.textContent = `Bienvenid@ ${nombreUsuario} :), eres ${
-    adminUsuario === "true" ? "administrador" : "usuario"
-  }`;
+  mensajeBienvenida.textContent = `Bienvenid@ ${nombreUsuario} :)`;
   contenedorBienvenida.appendChild(mensajeBienvenida);
 
   formularioViaje.addEventListener("submit", function (e) {
@@ -81,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Filtrar viajes según los criterios
         const viajesFiltrados = viajes.filter(
-          (viaje) => viaje.origen === origen && viaje.destino === destino
+          (viaje) => viaje.origen === origen && viaje.destino === destino && viaje.fecha === fecha && viaje.Hora === horaSeleccionada
         );
 
         if (viajesFiltrados.length > 0) {
@@ -95,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             viajeHTML.innerHTML = `
                             <h2>Detalles de viaje</h2>
                             <p><span>Origen:</span> ${origen} | <span>Destino:</span> ${destino}</p>
-                            <p><span>Fecha:</span> ${fecha} | <span>Hora:</span> ${horaSeleccionada}</p>
+                            <p><span>Fecha:</span> ${fecha} | <span>Hora:</span> ${viaje.Hora}</p>
                             <p><span>Número de pasajeros:</span> ${n_pasajeros} | <span>Precio:</span> $${totalViaje}</p>
                         `;
 
@@ -112,13 +110,19 @@ document.addEventListener("DOMContentLoaded", function () {
             botonPagar.addEventListener("click", function () {
               localStorage.setItem("totalViaje", totalViaje);
               localStorage.setItem("fechaviaje", fecha);
+              localStorage.setItem("origenviaje", origen);
+              localStorage.setItem("destinoviaje", destino);
+              localStorage.setItem("horaviaje", horaSeleccionada);
+              localStorage.setItem("n_pasajerosviaje", n_pasajeros);
+
+
             });
             contenedorViajes.appendChild(containerBtnPagar);
             containerBtnPagar.appendChild(botonPagar);
           });
         } else {
           const mensaje = document.createElement("P");
-          mensaje.textContent = "No se encontraron viajes :(";
+          mensaje.textContent = "No se encontraron viajes :( Prueba otra fecha u horario";
           mensaje.classList.add("mensaje");
           contenedorViajes.appendChild(mensaje);
         }

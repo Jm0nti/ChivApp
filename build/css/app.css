@@ -765,25 +765,25 @@ body > section {
   margin-bottom: 2rem;
 }
 
-.formulario-viaje {
+.formulario-viaje--usuario {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   grid-template-rows: repeat(4, auto);
 }
 @media (min-width: 768px) {
-  .formulario-viaje {
+  .formulario-viaje--usuario {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     gap: 2rem;
   }
-  .formulario-viaje .formulario__cuadro {
+  .formulario-viaje--usuario .formulario__cuadro {
     grid-row: 4/5;
     grid-column: 1/3;
   }
 }
-.formulario-viaje .formulario__campo {
+.formulario-viaje--usuario .formulario__campo {
   border: none;
   background-color: #e1e1e1;
   border-radius: 1rem;
@@ -792,7 +792,7 @@ body > section {
   margin-top: 1.5rem;
   width: 100%;
 }
-.formulario-viaje .formulario__submitViaje {
+.formulario-viaje--usuario .formulario__submitViaje {
   background-color: #000000;
   border: none;
   font-size: 2rem;
@@ -802,30 +802,30 @@ body > section {
   border-radius: 1rem;
   transition: background-color 0.3s ease;
 }
-.formulario-viaje .formulario__submitViaje:hover {
+.formulario-viaje--usuario .formulario__submitViaje:hover {
   cursor: pointer;
   background-color: #840032;
 }
 @media (min-width: 768px) {
-  .formulario-viaje .formulario__submitViaje {
+  .formulario-viaje--usuario .formulario__submitViaje {
     display: inline-block;
     width: 100%;
   }
 }
-.formulario-viaje .campo__SubmitViaje {
+.formulario-viaje--usuario .campo__SubmitViaje {
   display: flex;
   flex-direction: column;
   margin-top: 3.8rem;
 }
 @media (min-width: 768px) {
-  .formulario-viaje .campo__SubmitViaje {
+  .formulario-viaje--usuario .campo__SubmitViaje {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
 }
-.formulario-viaje .campo__label {
+.formulario-viaje--usuario .campo__label {
   display: block;
   font-weight: 500;
 }
@@ -1050,12 +1050,39 @@ body > section {
   border-radius: 10px;
 }
 
+.payment-options {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.card-payment, .qr-payment {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .contenido-card {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+}
+
+.botones-opciones-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .botones-opciones-pago {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .formulario-viaje {
@@ -1096,13 +1123,27 @@ body > section {
 }
 
 button {
-  padding: 10px;
+  padding: 1.4rem;
   background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 10px;
+}
+
+.button-volver-pago {
+  padding: 1.4rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.button-volver-pago:hover {
+  background-color: #e53935;
 }
 
 button:hover {
@@ -1128,22 +1169,37 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.contenido-confirmacion button {
+  background-color: #0077b6;
+  font-weight: 700;
+  border-radius: 1rem;
+}
 
 .confirmacion-exito {
   color: green;
-  font-size: 24px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
 .confirmacion-error {
   color: red;
-  font-size: 24px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
 .detalles-pago {
   text-align: left;
   margin-bottom: 20px;
+}
+.detalles-pago .pago-aceptado, .detalles-pago .pago-rechazado {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.detalles-pago .pago-aceptado {
+  color: green;
+}
+.detalles-pago .pago-rechazado {
+  color: red;
 }
 
 .detalles-pago p {
