@@ -61,16 +61,6 @@
       "precio": "35656",
       "Aforo": 23,
       "Hora": "15:00"
-    },
-    {
-      "origen": "Urrao",
-      "destino": "Sonson",
-      "id": 546465,
-      "fecha": "2024-07-30",
-      "placa": "HLJ234",
-      "precio": "23456",
-      "Aforo": 45,
-      "Hora": "15:00"
     }
   ]
 }

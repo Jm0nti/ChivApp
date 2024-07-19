@@ -143,6 +143,32 @@ app.post('/agregar-viaje', (req, res) => {
     });
 });
 
+// Nueva ruta para eliminar un viaje por ID
+app.delete('/eliminar-viaje/:id', (req, res) => {
+    const viajeId = parseInt(req.params.id);
+
+    fs.readFile('viajes.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+        const viajesActualizados = jsonData.viajes.filter(v => v.id !== viajeId);
+
+        jsonData.viajes = viajesActualizados;
+
+        fs.writeFile('viajes.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Viaje eliminado correctamente');
+        });
+    });
+});
+
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
