@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         
                     });
+
+                    agregarViajeadmin({
+                        origen: OrigenInput.value,
+                        destino: DestinoInput.value,
+                        id: parseInt(IdInput.value),
+                        fecha: FechaInput.value,
+                        placa: PlacaInput.value,
+                        precio: PrecioInput.value,
+                        Aforo: parseInt(NpInput.value),
+                        Hora: HoraInput.value,
+                    })
                 }
             })
             .catch(error => {
@@ -150,6 +161,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function agregarViaje(nuevoViaje) {
         fetch('http://localhost:3000/agregar-viaje', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(nuevoViaje),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al guardar los datos en el servidor');
+            }
+            return response.text();
+        })
+        .then(data => {
+            mostrarAlerta(data);
+            formRegistro.reset();
+        })
+        .catch(error => {
+            console.error('Error al enviar datos al servidor:', error);
+            mostrarAlerta('Error al enviar datos al servidor', true);
+        });
+    }
+
+    function agregarViajeadmin(nuevoViaje) {
+        fetch('http://localhost:3000/agregar-viajeadmin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,0 +1,24 @@
+{
+  "viajes": [
+    {
+      "origen": "Urrao",
+      "destino": "Sonson",
+      "id": 4444,
+      "fecha": "2024-07-30",
+      "placa": "FHH456",
+      "precio": "24000",
+      "Aforo": 34,
+      "Hora": "15:00"
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Sonson",
+      "id": 4545,
+      "fecha": "2024-07-30",
+      "placa": "FHH456",
+      "precio": "35656",
+      "Aforo": 23,
+      "Hora": "15:00"
+    }
+  ]
+}

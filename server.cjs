@@ -108,6 +108,39 @@ app.post('/guardar-placa', (req, res) => {
         });
     });
 });
+// Ruta archivo chivas.json
+app.get('/viajesadmin.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'viajes.json'));
+});
+
+// Actualizacion de chivas, agregar chiva
+app.post('/agregar-viajeadmin', (req, res) => {
+    const nuevoViaje = req.body;
+
+    fs.readFile('viajesadmin.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+
+        if (!jsonData.viajes) {
+            jsonData.viajes = [];
+        }
+
+        jsonData.viajes.push(nuevoViaje);
+
+        fs.writeFile('viajesadmin.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Viaje agregado correctamente');
+        });
+    });
+});
 
 // Ruta archivo chivas.json
 app.get('/viajes.json', (req, res) => {
@@ -159,6 +192,32 @@ app.delete('/eliminar-viaje/:id', (req, res) => {
         jsonData.viajes = viajesActualizados;
 
         fs.writeFile('viajes.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
+            if (err) {
+                res.status(500).send('Error al escribir en el archivo JSON');
+                return;
+            }
+
+            res.status(200).send('Viaje eliminado correctamente');
+        });
+    });
+});
+
+// Nueva ruta para eliminar un viaje por ID
+app.delete('/eliminar-viajeadmin/:id', (req, res) => {
+    const viajeId = parseInt(req.params.id);
+
+    fs.readFile('viajesadmin.json', 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Error al leer el archivo JSON');
+            return;
+        }
+
+        const jsonData = JSON.parse(data);
+        const viajesActualizados = jsonData.viajes.filter(v => v.id !== viajeId);
+
+        jsonData.viajes = viajesActualizados;
+
+        fs.writeFile('viajesadmin.json', JSON.stringify(jsonData, null, 2), 'utf8', (err) => {
             if (err) {
                 res.status(500).send('Error al escribir en el archivo JSON');
                 return;
