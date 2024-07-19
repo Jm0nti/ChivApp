@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 viajeDiv.innerHTML = `
                     <h3>Viaje ${viaje.id}</h3>
-                    <p><strong>Fecha:</strong> ${viaje.fecha}</p>
-                    <p><strong>Hora de Salida:</strong> ${viaje.Hora}</p>
-                    <p><strong>Destino:</strong> ${viaje.destino}</p>
+                    <p><strong>Fecha:</strong> ${viaje.fecha} | <strong>Hora de Salida:</strong> ${viaje.Hora}</p>
+                    <p><strong>Origen:</strong> ${viaje.origen} | <strong>Destino:</strong> ${viaje.destino}</p>
                     <p><strong>Pasajeros:</strong> ${viaje.Aforo}</p>
-                    <button class="btn-iniciar" data-id="${viaje.id}">Eliminar Viaje</button>
+                    <div class="container-btn-iniciar">
+                    <button class="btn-iniciar" data-id="${viaje.id}">Iniciar Viaje</button>
+                    </div>
                 `;
 
                 viajesContainer.appendChild(viajeDiv);

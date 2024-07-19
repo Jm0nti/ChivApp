@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('../../viajes.json')
         .then(response => response.json())
         .then(data => {
-            const viajesContainer = document.querySelector('.viajes');
+            const viajesContainer = document.querySelector('.viajes-conductor');
             const buttonState = JSON.parse(localStorage.getItem('buttonState')) || { enabledButtonId: 1 };
             const enabledButtonId = buttonState.enabledButtonId;
             const viajesFiltrados = data.viajes.filter(viaje => viaje.placa === placafiltro);
@@ -16,11 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 viajeDiv.innerHTML = `
                     <h3>Viaje ${viaje.id}</h3>
-                    <p><strong>Fecha:</strong> ${viaje.fecha}</p>
-                    <p><strong>Hora de Salida:</strong> ${viaje.Hora}</p>
-                    <p><strong>Destino:</strong> ${viaje.destino}</p>
+                    <p><strong>Fecha:</strong> ${viaje.fecha} | <strong>Hora de Salida:</strong> ${viaje.Hora}</p>
+                    <p><strong>Origen:</strong> ${viaje.origen} | <strong>Destino:</strong> ${viaje.destino}</p>
                     <p><strong>Pasajeros:</strong> ${viaje.Aforo}</p>
+                    <div class="container-btn-iniciar">
                     <button class="btn-iniciar" data-id="${viaje.id}">Iniciar Viaje</button>
+                    </div>
                 `;
 
                 viajesContainer.appendChild(viajeDiv);

@@ -149,6 +149,23 @@
       "placa": "HLJ234",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 1011121314,
+      "pass": "1234",
+      "nombre": "Conductor",
+      "apellido": "Apellido",
+      "placa": "SNU842",
+      "admin": false,
+      "driver": true
+    },
+    {
+      "id": 124124,
+      "pass": "1234",
+      "nombre": "Daniel",
+      "apellido": "Puñoz",
+      "admin": false,
+      "driver": false
     }
   ]
 }

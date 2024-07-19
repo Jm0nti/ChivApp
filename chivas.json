@@ -82,6 +82,12 @@
       "marca": "Chevrolet",
       "capacidad": 6,
       "modelo": 2020
+    },
+    {
+      "placa": "SNU842",
+      "marca": "Mercedes Benz",
+      "capacidad": 30,
+      "modelo": 1994
     }
   ]
 }

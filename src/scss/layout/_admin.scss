@@ -120,6 +120,21 @@
     border-radius: 10px;
 }
 
+.viajes-admin{
+    h2{
+        text-align: center;
+    }
+
+    .btn-volver-viajes-admin{
+        display: block;
+        margin-bottom: 2rem;
+
+        .formulario__volver{
+            display: block;
+        }
+    }
+}
+
 // .contenedor-footer--admin{
 //     margin-top:6rem;
 // }

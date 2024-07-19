@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p><strong>Fecha:</strong> ${viaje.fecha}</p>
                     <p><strong>Hora de Salida:</strong> ${viaje.Hora}</p>
                     <p><strong>Destino:</strong> ${viaje.destino}</p>
-                    <p><strong>Pasajeros:</strong> ${viaje.pasajeros}</p>
+                    <p><strong>Pasajeros:</strong> ${viaje.Aforo}</p>
                 `;
             }
         })
@@ -35,5 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
         .catch(error => console.error('Error en la solicitud de eliminación:', error));
+    });
+
+    document.querySelector('.btn-volver').addEventListener('click', () => {
+        window.location.href = '../../conductor1.html';
     });
 });

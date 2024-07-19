@@ -1,3 +1,6 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .viajes {
     max-width: 600px;
     margin: 0 auto;
@@ -11,42 +14,111 @@
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
+.viajes-conductor{
+
+    h2{
+        margin-top: 2rem;
+        padding: 0;
+        text-align: center;
+    }
+}
   
 .viaje h3 {
     margin-top: 0;
+    font-size: 4rem;
 }
-  
+
+#viaje-info{
+    margin-bottom: 0;
+}
+
+.container-btn-iniciar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
 .btn-iniciar {
     background-color: #007BFF;
     color: white;
+    font-weight: 700;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    bottom: 0;
+    right: 0;
 }
   
+
 .btn-iniciar:hover {
     background-color: #0056b3;
 }
   
-.btn-terminar {
-    background-color: #28a745;
+
+.botones-conductor-viaje{
+    margin: 0;
+    
+    @include m.telefono{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 100%;
+
+        .btn-terminar, .btn-volver {
+            width: 100%;
+        }
+    }
+
+    @include m.tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 70%;
+    }
+}
+
+.btn-terminar, .btn-volver {
     color: white;
+    font-weight: 700;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.btn-terminar {
+    background-color: #28a745;
 }
   
 .btn-terminar:hover {
     background-color: #218838;
 }
+
+.btn-volver {
+    background-color: #f44336; /* Color de fondo para el botón de volver */
+}
+
+.btn-volver:hover {
+    background-color: #e53935; /* Color de fondo al pasar el cursor */
+}
+
+
   
 .detail-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    @include m.contenedor;
+    display: block;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 20px;
+    }
 }
   
 .detail-container img {
