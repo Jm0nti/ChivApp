@@ -35,16 +35,6 @@
     {
       "origen": "Urrao",
       "destino": "Sonson",
-      "id": 4444,
-      "fecha": "2024-07-30",
-      "placa": "FHH456",
-      "precio": "24000",
-      "Aforo": 34,
-      "Hora": "15:00"
-    },
-    {
-      "origen": "Urrao",
-      "destino": "Sonson",
       "id": 4545,
       "fecha": "2024-07-30",
       "placa": "SNU842",
@@ -61,6 +51,16 @@
       "precio": "32900",
       "Aforo": 30,
       "Hora": "10:00"
+    },
+    {
+      "origen": "Urrao",
+      "destino": "Sonson",
+      "id": 3333,
+      "fecha": "2024-07-30",
+      "placa": "FBX217",
+      "precio": "23000",
+      "Aforo": 45,
+      "Hora": "14:00"
     }
   ]
 }

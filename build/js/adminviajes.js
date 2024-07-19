@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p><strong>Origen:</strong> ${viaje.origen} | <strong>Destino:</strong> ${viaje.destino}</p>
                     <p><strong>Pasajeros:</strong> ${viaje.Aforo}</p>
                     <div class="container-btn-iniciar">
-                    <button class="btn-iniciar" data-id="${viaje.id}">Iniciar Viaje</button>
+                    <button class="btn-iniciar" data-id="${viaje.id}">Eliminar Viaje</button>
                     </div>
                 `;
 

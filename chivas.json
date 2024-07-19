@@ -88,6 +88,12 @@
       "marca": "Mercedes Benz",
       "capacidad": 30,
       "modelo": 1994
+    },
+    {
+      "placa": "FBX217",
+      "marca": "Chevrolet",
+      "capacidad": 35,
+      "modelo": 2024
     }
   ]
 }

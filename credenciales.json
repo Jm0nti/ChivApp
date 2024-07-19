@@ -166,6 +166,15 @@
       "apellido": "Puñoz",
       "admin": false,
       "driver": false
+    },
+    {
+      "id": 500,
+      "pass": "Lorenzoneta",
+      "nombre": "Richard",
+      "apellido": "Rios",
+      "placa": "FBX217",
+      "admin": false,
+      "driver": true
     }
   ]
 }
