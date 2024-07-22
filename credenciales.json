@@ -175,6 +175,31 @@
       "placa": "FBX217",
       "admin": false,
       "driver": true
+    },
+    {
+      "id": 546587,
+      "pass": "ofelia",
+      "nombre": "Hernando de Jesus",
+      "apellido": "Velez Castaño",
+      "admin": false,
+      "driver": false
+    },
+    {
+      "id": 8061440,
+      "pass": "fernan",
+      "nombre": "Fernan",
+      "apellido": "Villa",
+      "admin": false,
+      "driver": false
+    },
+    {
+      "id": 99999,
+      "pass": "Felipe",
+      "nombre": "Ernesto",
+      "apellido": "Velez",
+      "placa": "TNV678",
+      "admin": false,
+      "driver": true
     }
   ]
 }

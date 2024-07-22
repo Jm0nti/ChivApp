@@ -94,6 +94,12 @@
       "marca": "Chevrolet",
       "capacidad": 35,
       "modelo": 2024
+    },
+    {
+      "placa": "TNV678",
+      "marca": "Chevrolet",
+      "capacidad": 45,
+      "modelo": 2020
     }
   ]
 }
